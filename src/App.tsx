@@ -7,7 +7,7 @@ import Footer from './components/Footer/Footer.tsx';
 
 const App = () => {
   return (
-    <>
+    <div className='d-flex flex-column min-vh-100'>
       <header>
         <ToolBar />
       </header>
@@ -19,10 +19,10 @@ const App = () => {
           <Route path={'*'} element={<h1>Not Found!</h1>}></Route>
         </Routes>
       </main>
-      <footer>
+      <footer className='mt-auto'>
         <Footer />
       </footer>
-    </>
+    </div>
   );
 };
 

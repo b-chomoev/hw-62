@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './containers/Home/Home.tsx';
 import AboutUs from './containers/AboutUs/AboutUs.tsx';
 import Contacts from './containers/Contacts/Contacts.tsx';
+import Footer from './components/Footer/Footer.tsx';
 
 const App = () => {
   return (
@@ -18,6 +19,9 @@ const App = () => {
           <Route path={'*'} element={<h1>Not Found!</h1>}></Route>
         </Routes>
       </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 };
